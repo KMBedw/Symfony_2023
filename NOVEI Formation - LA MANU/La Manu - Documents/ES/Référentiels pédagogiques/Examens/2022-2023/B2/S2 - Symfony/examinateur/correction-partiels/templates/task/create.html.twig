@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title "Création d'une tâche" %}
+
+{% block body %}
+	<div class="w-75 m-auto">
+		<h1>Création une tâche</h1>
+
+		{{ form_start(form) }}
+		{{ form_widget(form) }}
+
+		<div class="mb-3">
+			<button class="btn btn-primary" type="submit">Créer la tâche</button>
+		</div>
+		{{ form_end(form) }}
+	</div>
+{% endblock %}
+

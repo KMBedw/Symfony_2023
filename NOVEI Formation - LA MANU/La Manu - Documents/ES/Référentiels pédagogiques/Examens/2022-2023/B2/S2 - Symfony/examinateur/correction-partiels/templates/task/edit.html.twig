@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title "Mise à jour d'une tâche" %}
+
+{% block body %}
+	<div class="w-75 m-auto">
+		<h1>Éditer une tâche</h1>
+
+		{{ form_start(form) }}
+		{{ form_widget(form) }}
+
+		<div class="mb-3">
+			<button class="btn btn-primary" type="submit">Modifier la tâche</button>
+		</div>
+		{{ form_end(form) }}
+	</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+	<div class="row justify-content-center mt-5">
+		<div class="col-md-5">
+			<h1 class="mb-3">Informations personnelles</h1>
+			{{ form_start(form) }}
+			<div class="mb-3">
+				{{ form_widget(form) }}
+			</div>
+			<div class="mb-3">
+				<button class="btn btn-primary" type="submit">Mettre à jour</button>
+			</div>
+			{{ form_end(form) }}
+		</div>
+	</div>
+{% endblock %}
